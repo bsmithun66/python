@@ -1,0 +1,149 @@
+print("Hello World!")
+flag = True
+a = 19
+
+b = 10
+print(flag)
+print(a)
+print(b)
+print(type(a))
+print(type(flag))
+print(type(b))
+print(10/3)
+print(10//3)
+print(2**8)
+print(a-b)
+x,y,z = 1,'b','c'
+print(x,y,z)
+
+#name = input("enter ur name")
+#print("Hello",name)
+
+a=0
+b=bool(a)
+print(b)
+
+
+list1 = ["abc","cat",1,2,True]
+print(list1)
+print(list1[3])
+list1[3]=10
+print(list1[3])
+
+#append()-add element at the end of the list 
+list1.append("New Item")
+print(list1) 
+
+#insert(index,item)-insert item at the given index
+list1.insert(2,"dog")
+print(list1)
+
+#extend([list]) - Adds elments from another list
+list1.extend(["tiger","lion",9,1,8,3])
+print(list1)
+
+#remove(item) - Removes First occurence
+list1.remove(1)
+print(list1)
+
+#pop(index) - Removes and returns the item at the last by defrault
+list1.pop()
+print(list1)
+list1.pop(3)
+print(list1)
+
+#slice operations
+print(list1[2:7])
+
+#clear() - removes all the elements in the list 
+list1.clear()
+print(list1)
+
+numbers = [-900,208,300,345,50,99,99,8,0]
+numbers.reverse()
+print(numbers)
+numbers.sort()
+print(numbers)
+print(numbers.count(99))
+
+basket = ["zebra","cat","tiger","dog"]
+basket.sort()
+print(basket)
+print(basket.count("dog"))
+print(basket.index("dog"))
+
+
+
+#Tuples (immutable)
+tup1 = (10,20,30)
+print(tup1)
+#Tuple without parthensis
+colors = "red","black","white"
+print(colors)
+
+person = ("Alice",29,"Engineer")
+name,age,profession = person
+print(person)
+print(age)
+
+print(tup1)
+print(tup1[0])
+print(tup1[-1])
+print(len(tup1))#len() gves the length of the tuple
+print(tup1.count(10))
+print(tup1.index(10))
+
+my_set={1,2,3,4}
+another_set= set([4,5,6])
+print(my_set)
+print(another_set)
+my_set.add(5)
+
+print(my_set)
+another_set.remove(5)
+print(another_set)
+
+A={1,2,3,4}
+B={5,6,7,8}
+print(A|B)#or (A.union(B)) || represents union
+print(A & B)# intersection 
+#print(A-B)
+print(A.difference(B))
+print(A.symmetric_difference(B))
+squares = {x**2 for x in range(1,9)}
+print(squares)
+
+#frozen=frozenset([1,2,3]) it is fixed cant be changed
+#frozen.add(5)
+#print(frozen)
+
+student = {
+    "NAME":"ALICE",
+    "AGE":20,
+    "COURSE":"PYTHON"
+}
+
+person = dict(name="sam",age=20,course="python")
+print(student["NAME"])
+print(person.get("age"))
+student["AGE"]=23
+person["name"]="ram"
+print(student["AGE"])
+print(person.get("name"))
+student.pop("COURSE")
+print(student)
+print(student.clear())
+
+students = {
+    "101":{"name":"Tom","grade":"A"},
+    "102":{"name":"Ram","grade":"B"}
+}
+print(students["101"]["name"])
+print(students["102"]["name"])
+
+students.clear()
+print(students)
+print(type(students))
+
+tup1 = (1,2)
+print(tup1*3)
